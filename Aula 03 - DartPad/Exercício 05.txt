@@ -1,0 +1,19 @@
+void main() {  
+
+ String nome1 = "Julia";
+  
+ String nome2 = " Nicole";
+  
+  print(nome1+nome2);
+  
+  if(nome1 == nome2){
+  print('São as mesma pessoas');
+}else{
+  print("Os nomes não conferem");
+    
+  }
+}
+
+
+ 
+

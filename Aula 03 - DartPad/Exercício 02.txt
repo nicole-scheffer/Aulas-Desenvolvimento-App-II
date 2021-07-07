@@ -1,0 +1,20 @@
+void main() {
+
+  var entrada = 12;
+  var pessoas = 4;
+  
+  print(entrada);
+  print(pessoas);
+  print(entrada*pessoas);
+}
+
+ou
+(Fiz as duas opções)
+
+void main() {
+
+  int entrada = 12;
+  int pessoas = 4;
+  
+  print(entrada*pessoas);
+}

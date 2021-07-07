@@ -1,0 +1,14 @@
+void main() {
+
+ var nome = "Nicole";
+ var sobrenome = "Nascimento Scheffer";
+ var idade = "18 anos";
+ var endereco ="Caxias do Sul";
+ 
+  //Saída
+  print(nome);
+  print(sobrenome);
+  print(idade);
+  print(endereco);
+
+}
