@@ -1,0 +1,16 @@
+void main() {
+
+  int maior = 0;
+  
+  for(int i = 0; i <= 10; i++){
+    print("valores: " +i.toString());
+    
+    maior = i;
+    
+    if(i >= maior){
+      
+    }
+  }
+  
+  print("o maior é:" +maior.toString()  );
+}
