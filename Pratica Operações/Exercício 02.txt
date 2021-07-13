@@ -1,0 +1,19 @@
+2-Desenvolver um programa em Dart que compare dois números e diga se o primeiro é maior, menor ou igual ao segundo número.
+
+void main() {
+  
+  int num1 = 18;
+  int num2 = 50;
+  
+   if(num1 > num2){
+  print('Número 1 é menor');
+}else{
+  print("Número 2 é maior");
+}
+  if(num1 == num2){
+  print('Números são iguais');
+}else{
+  print("Números são diferentes");
+}
+   
+}

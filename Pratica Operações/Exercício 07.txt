@@ -1,0 +1,36 @@
+7- Desenvolver um programa em Dart que calcule o índice da massa corporal. IMC = peso (kg) / altura (m) x altura (m). Verifique
+a seguinte tabela e escreva a classificação:
+
+void main() {
+  
+  
+  print(60);//peso
+  double peso = 60;
+  
+  print(1.57);//altura
+  double altura = 1.57;
+  
+
+  double imc = peso / (altura * altura);
+ 
+ 
+  print('Seu IMC é  ' + imc.toStringAsFixed(2)); 
+  
+  if (imc < 16) {
+    print('Magreza grave');
+  } else if (imc < 17) {
+    print('Magreza moderada');
+  } else if (imc < 18.5) {
+    print('Magreza leve');
+  } else if (imc < 25) {
+    print('Saudável');
+  } else if (imc < 30) {
+    print('Sobrepeso');
+  } else if (imc < 35) {
+    print('Obesidade – GRAU I');
+  } else if (imc < 40) {
+    print('Obesidade – GRAU II | Severa');
+  } else {
+    print('Obesidade – GRAU III | Mórbida');
+  }
+}

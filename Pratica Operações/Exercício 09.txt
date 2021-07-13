@@ -1,0 +1,31 @@
+void main(){
+
+    // 0 a 12 anos criança
+   //13 a 21 anos jovem
+   //22 a 59 anos adultos
+  //60 anos ou mais Terceira idade 
+
+9-Desenvolva um programa que calcule a idade e diga se qual a categoria de um curso de natação: Criança 0 a 12 anos, Jovem
+de 13 a 21 anos, Adulto 22 a 59 anos e Terceira Idade 60 anos ou mais.
+
+(int idade){
+    if(idade >= 0 && idade <= 12){
+        print("criança");
+    }
+    else if(idade >= 13 && idade <= 21){
+        print("jovem");
+    }
+    else if(idade >= 22 && idade <= 59){
+        print("adultos");
+    }
+    else if(idade >= 60 && idade <= 120){
+        print("terceira idade");
+    }
+
+
+    print(15);
+    print("%d &idade");
+  
+};
+}
+//não entendi muito bem, acredito que não esteja certo.
