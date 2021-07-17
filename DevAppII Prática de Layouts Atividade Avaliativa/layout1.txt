@@ -1,0 +1,75 @@
+import 'dart:html';
+import 'package:flutter/material.dart';
+class layout1 extends StatefulWidget {
+  const layout1({Key? key}) : super(key: key);
+
+  @override
+  _layout1State createState() => _layout1State();
+}
+
+class _layout1State extends State<layout1> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Qual Redes Sociais você mais usa?"),
+        backgroundColor: Colors.black,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Image.asset(
+              "imagens/insta.jpg",
+              width: 170,
+              height: 170,
+            ),
+            RaisedButton(
+              child: Text("esta"),
+              color: Colors.purple,
+              onPressed: (){
+                print("esta");
+              },
+            ),
+            Image.asset(
+              "imagens/whatsapp.jpg",
+              width: 150,
+              height: 100,
+            ),
+            RaisedButton(
+              child: Text("esta"),
+              color: Colors.purple,
+              onPressed: (){
+                print("esta");
+              },
+            ),
+            Image.asset(
+              "imagens/face.png",
+              width: 150,
+              height: 100,
+            ),
+            RaisedButton(
+              child: Text("esta"),
+              color: Colors.purple,
+              onPressed: (){
+                print("esta");
+              },
+            ),
+            Image.asset(
+              "imagens/twitter.png",
+              width: 150,
+              height: 100,
+            ),
+            RaisedButton(
+              child: Text("esta"),
+              color: Colors.purple,
+              onPressed: (){
+                print("esta");
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
