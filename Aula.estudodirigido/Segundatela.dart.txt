@@ -1,0 +1,56 @@
+import 'package:aulatelas/paginainicial.dart';
+import 'package:flutter/material.dart';
+
+class Segundatela extends StatefulWidget {
+  const Segundatela({Key? key}) : super(key: key);
+
+  @override
+  _SegundatelaState createState() => _SegundatelaState();
+}
+
+class _SegundatelaState extends State<Segundatela> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: new AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
+        title: const Text('Passagens aqui', style: TextStyle(color: Colors.black)),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: ListView(
+        children: <Widget>[
+          Image.asset(
+            "imagens/passagens.jpeg",
+          ),
+          ListTile(
+            leading: Icon(Icons.add_alert),
+            title: Text("notificar"),
+          ),
+          ListTile(
+            leading: Icon(Icons.add),
+            title: Text("adicionar informação"),
+          ),
+          ListTile(
+            leading: Icon(Icons.add_photo_alternate_outlined),
+            title: Text("adicionar imagem"),
+          ),
+          ListTile(
+            leading: Icon(Icons.arrow_downward_sharp),
+            title: Text("baixar informação"),
+          ),
+          RaisedButton(
+              child: Text("voltar"),
+              color: Colors.black38,
+              padding: EdgeInsets.all(20),
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => home()
+                ),
+                );
+              }
+          ),
+        ],
+      ),
+    );
+  }
+}

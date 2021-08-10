@@ -1,0 +1,59 @@
+import 'package:aulatelas/terceiratela.dart';
+import 'package:flutter/material.dart';
+import 'package:aulatelas/Segundatela.dart';
+
+class home extends StatefulWidget {
+  const home({Key? key}) : super(key: key);
+
+  @override
+  _homeState createState() => _homeState();
+}
+
+class _homeState extends State<home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: new AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
+        title: const Text('Quer viajar e não sabe por onde começar?', style: TextStyle(color: Colors.black)),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset(
+              "imagens/viagem.jpeg",
+              width: 1000,
+              height: 500,
+            ),
+            Text("Para onde deseja ir?"),
+            //ignore: deprecated_member_use
+            RaisedButton(
+                child: Text("Compre sua passagem aqui!"),
+                color: Colors.black38,
+                padding: EdgeInsets.all(20),
+                onPressed:(){
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => Segundatela()
+                  ),
+                  );
+                }
+            ),
+            RaisedButton(
+                child: Text("Fazer orçamento"),
+                color: Colors.black38,
+                padding: EdgeInsets.all(20),
+                onPressed:(){
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => terceiratela()
+                  ),
+                  );
+                }
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
