@@ -1,0 +1,76 @@
+import 'package:aulatelas/paginainicial.dart';
+import 'package:flutter/material.dart';
+
+class terceiratela extends StatefulWidget {
+  const terceiratela({Key? key}) : super(key: key);
+
+  @override
+  _terceiratelaState createState() => _terceiratelaState();
+}
+
+class _terceiratelaState extends State<terceiratela> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: new AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
+        title: const Text('Alguns lugares para você!', style: TextStyle(color: Colors.black)),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Image.asset(
+              "imagens/porto.jpeg",
+              width: 250,
+              height: 200,
+            ),
+            RaisedButton(
+                child: Text("Porto de Galinhas"),
+                color: Colors.black38,
+                padding: EdgeInsets.all(20),
+                onPressed:(){
+                }
+            ),
+            Image.asset(
+              "imagens/disney.jpeg",
+              width: 250,
+              height: 200,
+            ),
+            RaisedButton(
+                child: Text("Disney Orlando"),
+                color: Colors.black38,
+                padding: EdgeInsets.all(20),
+                onPressed:(){
+                }
+            ),
+            Image.asset(
+              "imagens/canada.jpeg",
+              width: 250,
+              height: 200,
+            ),
+            RaisedButton(
+                child: Text("Canadá"),
+                color: Colors.black38,
+                padding: EdgeInsets.all(20),
+                onPressed:(){
+                }
+
+            ),
+            RaisedButton(
+                child: Text("voltar"),
+                color: Colors.black38,
+                padding: EdgeInsets.all(20),
+                onPressed:(){
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => home()
+                  ),
+                  );
+                }
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
